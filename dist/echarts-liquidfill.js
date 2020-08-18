@@ -108,10 +108,10 @@ module.exports = __webpack_require__(/*! ./src/liquidFill */ "./src/liquidFill.j
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/config.js":
-/*!********************************************!*\
-  !*** ./node_modules/echarts/lib/config.js ***!
-  \********************************************/
+/***/ "./node_modules/@ftf/echarts/lib/config.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@ftf/echarts/lib/config.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -173,14 +173,14 @@ if (typeof dev === 'undefined') {
 
 var __DEV__ = dev;
 exports.__DEV__ = __DEV__;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/data/DataDimensionInfo.js":
-/*!************************************************************!*\
-  !*** ./node_modules/echarts/lib/data/DataDimensionInfo.js ***!
-  \************************************************************/
+/***/ "./node_modules/@ftf/echarts/lib/data/DataDimensionInfo.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@ftf/echarts/lib/data/DataDimensionInfo.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -204,7 +204,7 @@ exports.__DEV__ = __DEV__;
 * under the License.
 */
 
-var zrUtil = __webpack_require__(/*! zrender/lib/core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! @ftf/zrender/lib/core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -344,10 +344,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/data/Source.js":
-/*!*************************************************!*\
-  !*** ./node_modules/echarts/lib/data/Source.js ***!
-  \*************************************************/
+/***/ "./node_modules/@ftf/echarts/lib/data/Source.js":
+/*!******************************************************!*\
+  !*** ./node_modules/@ftf/echarts/lib/data/Source.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -371,16 +371,16 @@ module.exports = _default;
 * under the License.
 */
 
-var _util = __webpack_require__(/*! zrender/lib/core/util */ "./node_modules/zrender/lib/core/util.js");
+var _util = __webpack_require__(/*! @ftf/zrender/lib/core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 var createHashMap = _util.createHashMap;
 var isTypedArray = _util.isTypedArray;
 
-var _clazz = __webpack_require__(/*! ../util/clazz */ "./node_modules/echarts/lib/util/clazz.js");
+var _clazz = __webpack_require__(/*! ../util/clazz */ "./node_modules/@ftf/echarts/lib/util/clazz.js");
 
 var enableClassCheck = _clazz.enableClassCheck;
 
-var _sourceType = __webpack_require__(/*! ./helper/sourceType */ "./node_modules/echarts/lib/data/helper/sourceType.js");
+var _sourceType = __webpack_require__(/*! ./helper/sourceType */ "./node_modules/@ftf/echarts/lib/data/helper/sourceType.js");
 
 var SOURCE_FORMAT_ORIGINAL = _sourceType.SOURCE_FORMAT_ORIGINAL;
 var SERIES_LAYOUT_BY_COLUMN = _sourceType.SERIES_LAYOUT_BY_COLUMN;
@@ -526,10 +526,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/data/helper/completeDimensions.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/echarts/lib/data/helper/completeDimensions.js ***!
-  \********************************************************************/
+/***/ "./node_modules/@ftf/echarts/lib/data/helper/completeDimensions.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@ftf/echarts/lib/data/helper/completeDimensions.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -553,7 +553,7 @@ module.exports = _default;
 * under the License.
 */
 
-var _util = __webpack_require__(/*! zrender/lib/core/util */ "./node_modules/zrender/lib/core/util.js");
+var _util = __webpack_require__(/*! @ftf/zrender/lib/core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 var createHashMap = _util.createHashMap;
 var each = _util.each;
@@ -563,22 +563,22 @@ var extend = _util.extend;
 var isObject = _util.isObject;
 var clone = _util.clone;
 
-var _model = __webpack_require__(/*! ../../util/model */ "./node_modules/echarts/lib/util/model.js");
+var _model = __webpack_require__(/*! ../../util/model */ "./node_modules/@ftf/echarts/lib/util/model.js");
 
 var normalizeToArray = _model.normalizeToArray;
 
-var _sourceHelper = __webpack_require__(/*! ./sourceHelper */ "./node_modules/echarts/lib/data/helper/sourceHelper.js");
+var _sourceHelper = __webpack_require__(/*! ./sourceHelper */ "./node_modules/@ftf/echarts/lib/data/helper/sourceHelper.js");
 
 var guessOrdinal = _sourceHelper.guessOrdinal;
 var BE_ORDINAL = _sourceHelper.BE_ORDINAL;
 
-var Source = __webpack_require__(/*! ../Source */ "./node_modules/echarts/lib/data/Source.js");
+var Source = __webpack_require__(/*! ../Source */ "./node_modules/@ftf/echarts/lib/data/Source.js");
 
-var _dimensionHelper = __webpack_require__(/*! ./dimensionHelper */ "./node_modules/echarts/lib/data/helper/dimensionHelper.js");
+var _dimensionHelper = __webpack_require__(/*! ./dimensionHelper */ "./node_modules/@ftf/echarts/lib/data/helper/dimensionHelper.js");
 
 var OTHER_DIMENSIONS = _dimensionHelper.OTHER_DIMENSIONS;
 
-var DataDimensionInfo = __webpack_require__(/*! ../DataDimensionInfo */ "./node_modules/echarts/lib/data/DataDimensionInfo.js");
+var DataDimensionInfo = __webpack_require__(/*! ../DataDimensionInfo */ "./node_modules/@ftf/echarts/lib/data/DataDimensionInfo.js");
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -860,10 +860,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/data/helper/dimensionHelper.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/echarts/lib/data/helper/dimensionHelper.js ***!
-  \*****************************************************************/
+/***/ "./node_modules/@ftf/echarts/lib/data/helper/dimensionHelper.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@ftf/echarts/lib/data/helper/dimensionHelper.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -887,13 +887,13 @@ module.exports = _default;
 * under the License.
 */
 
-var _util = __webpack_require__(/*! zrender/lib/core/util */ "./node_modules/zrender/lib/core/util.js");
+var _util = __webpack_require__(/*! @ftf/zrender/lib/core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 var each = _util.each;
 var createHashMap = _util.createHashMap;
 var assert = _util.assert;
 
-var _config = __webpack_require__(/*! ../../config */ "./node_modules/echarts/lib/config.js");
+var _config = __webpack_require__(/*! ../../config */ "./node_modules/@ftf/echarts/lib/config.js");
 
 var __DEV__ = _config.__DEV__;
 
@@ -1035,10 +1035,10 @@ exports.getDimensionTypeByAxis = getDimensionTypeByAxis;
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/data/helper/sourceHelper.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/echarts/lib/data/helper/sourceHelper.js ***!
-  \**************************************************************/
+/***/ "./node_modules/@ftf/echarts/lib/data/helper/sourceHelper.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@ftf/echarts/lib/data/helper/sourceHelper.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1062,16 +1062,16 @@ exports.getDimensionTypeByAxis = getDimensionTypeByAxis;
 * under the License.
 */
 
-var _config = __webpack_require__(/*! ../../config */ "./node_modules/echarts/lib/config.js");
+var _config = __webpack_require__(/*! ../../config */ "./node_modules/@ftf/echarts/lib/config.js");
 
 var __DEV__ = _config.__DEV__;
 
-var _model = __webpack_require__(/*! ../../util/model */ "./node_modules/echarts/lib/util/model.js");
+var _model = __webpack_require__(/*! ../../util/model */ "./node_modules/@ftf/echarts/lib/util/model.js");
 
 var makeInner = _model.makeInner;
 var getDataItemValue = _model.getDataItemValue;
 
-var _util = __webpack_require__(/*! zrender/lib/core/util */ "./node_modules/zrender/lib/core/util.js");
+var _util = __webpack_require__(/*! @ftf/zrender/lib/core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 var createHashMap = _util.createHashMap;
 var each = _util.each;
@@ -1084,9 +1084,9 @@ var isArrayLike = _util.isArrayLike;
 var extend = _util.extend;
 var assert = _util.assert;
 
-var Source = __webpack_require__(/*! ../Source */ "./node_modules/echarts/lib/data/Source.js");
+var Source = __webpack_require__(/*! ../Source */ "./node_modules/@ftf/echarts/lib/data/Source.js");
 
-var _sourceType = __webpack_require__(/*! ./sourceType */ "./node_modules/echarts/lib/data/helper/sourceType.js");
+var _sourceType = __webpack_require__(/*! ./sourceType */ "./node_modules/@ftf/echarts/lib/data/helper/sourceType.js");
 
 var SOURCE_FORMAT_ORIGINAL = _sourceType.SOURCE_FORMAT_ORIGINAL;
 var SOURCE_FORMAT_ARRAY_ROWS = _sourceType.SOURCE_FORMAT_ARRAY_ROWS;
@@ -1735,10 +1735,10 @@ exports.guessOrdinal = guessOrdinal;
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/data/helper/sourceType.js":
-/*!************************************************************!*\
-  !*** ./node_modules/echarts/lib/data/helper/sourceType.js ***!
-  \************************************************************/
+/***/ "./node_modules/@ftf/echarts/lib/data/helper/sourceType.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@ftf/echarts/lib/data/helper/sourceType.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1801,10 +1801,10 @@ exports.SERIES_LAYOUT_BY_ROW = SERIES_LAYOUT_BY_ROW;
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/util/clazz.js":
-/*!************************************************!*\
-  !*** ./node_modules/echarts/lib/util/clazz.js ***!
-  \************************************************/
+/***/ "./node_modules/@ftf/echarts/lib/util/clazz.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@ftf/echarts/lib/util/clazz.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1828,11 +1828,11 @@ exports.SERIES_LAYOUT_BY_ROW = SERIES_LAYOUT_BY_ROW;
 * under the License.
 */
 
-var _config = __webpack_require__(/*! ../config */ "./node_modules/echarts/lib/config.js");
+var _config = __webpack_require__(/*! ../config */ "./node_modules/@ftf/echarts/lib/config.js");
 
 var __DEV__ = _config.__DEV__;
 
-var zrUtil = __webpack_require__(/*! zrender/lib/core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! @ftf/zrender/lib/core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -2092,10 +2092,10 @@ exports.setReadOnly = setReadOnly;
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/util/graphic.js":
-/*!**************************************************!*\
-  !*** ./node_modules/echarts/lib/util/graphic.js ***!
-  \**************************************************/
+/***/ "./node_modules/@ftf/echarts/lib/util/graphic.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@ftf/echarts/lib/util/graphic.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2119,89 +2119,89 @@ exports.setReadOnly = setReadOnly;
 * under the License.
 */
 
-var zrUtil = __webpack_require__(/*! zrender/lib/core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! @ftf/zrender/lib/core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
-var pathTool = __webpack_require__(/*! zrender/lib/tool/path */ "./node_modules/zrender/lib/tool/path.js");
+var pathTool = __webpack_require__(/*! @ftf/zrender/lib/tool/path */ "./node_modules/@ftf/zrender/lib/tool/path.js");
 
-var colorTool = __webpack_require__(/*! zrender/lib/tool/color */ "./node_modules/zrender/lib/tool/color.js");
+var colorTool = __webpack_require__(/*! @ftf/zrender/lib/tool/color */ "./node_modules/@ftf/zrender/lib/tool/color.js");
 
-var matrix = __webpack_require__(/*! zrender/lib/core/matrix */ "./node_modules/zrender/lib/core/matrix.js");
+var matrix = __webpack_require__(/*! @ftf/zrender/lib/core/matrix */ "./node_modules/@ftf/zrender/lib/core/matrix.js");
 
-var vector = __webpack_require__(/*! zrender/lib/core/vector */ "./node_modules/zrender/lib/core/vector.js");
+var vector = __webpack_require__(/*! @ftf/zrender/lib/core/vector */ "./node_modules/@ftf/zrender/lib/core/vector.js");
 
-var Path = __webpack_require__(/*! zrender/lib/graphic/Path */ "./node_modules/zrender/lib/graphic/Path.js");
+var Path = __webpack_require__(/*! @ftf/zrender/lib/graphic/Path */ "./node_modules/@ftf/zrender/lib/graphic/Path.js");
 
-var Transformable = __webpack_require__(/*! zrender/lib/mixin/Transformable */ "./node_modules/zrender/lib/mixin/Transformable.js");
+var Transformable = __webpack_require__(/*! @ftf/zrender/lib/mixin/Transformable */ "./node_modules/@ftf/zrender/lib/mixin/Transformable.js");
 
-var ZImage = __webpack_require__(/*! zrender/lib/graphic/Image */ "./node_modules/zrender/lib/graphic/Image.js");
+var ZImage = __webpack_require__(/*! @ftf/zrender/lib/graphic/Image */ "./node_modules/@ftf/zrender/lib/graphic/Image.js");
 
 exports.Image = ZImage;
 
-var Group = __webpack_require__(/*! zrender/lib/container/Group */ "./node_modules/zrender/lib/container/Group.js");
+var Group = __webpack_require__(/*! @ftf/zrender/lib/container/Group */ "./node_modules/@ftf/zrender/lib/container/Group.js");
 
 exports.Group = Group;
 
-var Text = __webpack_require__(/*! zrender/lib/graphic/Text */ "./node_modules/zrender/lib/graphic/Text.js");
+var Text = __webpack_require__(/*! @ftf/zrender/lib/graphic/Text */ "./node_modules/@ftf/zrender/lib/graphic/Text.js");
 
 exports.Text = Text;
 
-var Circle = __webpack_require__(/*! zrender/lib/graphic/shape/Circle */ "./node_modules/zrender/lib/graphic/shape/Circle.js");
+var Circle = __webpack_require__(/*! @ftf/zrender/lib/graphic/shape/Circle */ "./node_modules/@ftf/zrender/lib/graphic/shape/Circle.js");
 
 exports.Circle = Circle;
 
-var Sector = __webpack_require__(/*! zrender/lib/graphic/shape/Sector */ "./node_modules/zrender/lib/graphic/shape/Sector.js");
+var Sector = __webpack_require__(/*! @ftf/zrender/lib/graphic/shape/Sector */ "./node_modules/@ftf/zrender/lib/graphic/shape/Sector.js");
 
 exports.Sector = Sector;
 
-var Ring = __webpack_require__(/*! zrender/lib/graphic/shape/Ring */ "./node_modules/zrender/lib/graphic/shape/Ring.js");
+var Ring = __webpack_require__(/*! @ftf/zrender/lib/graphic/shape/Ring */ "./node_modules/@ftf/zrender/lib/graphic/shape/Ring.js");
 
 exports.Ring = Ring;
 
-var Polygon = __webpack_require__(/*! zrender/lib/graphic/shape/Polygon */ "./node_modules/zrender/lib/graphic/shape/Polygon.js");
+var Polygon = __webpack_require__(/*! @ftf/zrender/lib/graphic/shape/Polygon */ "./node_modules/@ftf/zrender/lib/graphic/shape/Polygon.js");
 
 exports.Polygon = Polygon;
 
-var Polyline = __webpack_require__(/*! zrender/lib/graphic/shape/Polyline */ "./node_modules/zrender/lib/graphic/shape/Polyline.js");
+var Polyline = __webpack_require__(/*! @ftf/zrender/lib/graphic/shape/Polyline */ "./node_modules/@ftf/zrender/lib/graphic/shape/Polyline.js");
 
 exports.Polyline = Polyline;
 
-var Rect = __webpack_require__(/*! zrender/lib/graphic/shape/Rect */ "./node_modules/zrender/lib/graphic/shape/Rect.js");
+var Rect = __webpack_require__(/*! @ftf/zrender/lib/graphic/shape/Rect */ "./node_modules/@ftf/zrender/lib/graphic/shape/Rect.js");
 
 exports.Rect = Rect;
 
-var Line = __webpack_require__(/*! zrender/lib/graphic/shape/Line */ "./node_modules/zrender/lib/graphic/shape/Line.js");
+var Line = __webpack_require__(/*! @ftf/zrender/lib/graphic/shape/Line */ "./node_modules/@ftf/zrender/lib/graphic/shape/Line.js");
 
 exports.Line = Line;
 
-var BezierCurve = __webpack_require__(/*! zrender/lib/graphic/shape/BezierCurve */ "./node_modules/zrender/lib/graphic/shape/BezierCurve.js");
+var BezierCurve = __webpack_require__(/*! @ftf/zrender/lib/graphic/shape/BezierCurve */ "./node_modules/@ftf/zrender/lib/graphic/shape/BezierCurve.js");
 
 exports.BezierCurve = BezierCurve;
 
-var Arc = __webpack_require__(/*! zrender/lib/graphic/shape/Arc */ "./node_modules/zrender/lib/graphic/shape/Arc.js");
+var Arc = __webpack_require__(/*! @ftf/zrender/lib/graphic/shape/Arc */ "./node_modules/@ftf/zrender/lib/graphic/shape/Arc.js");
 
 exports.Arc = Arc;
 
-var CompoundPath = __webpack_require__(/*! zrender/lib/graphic/CompoundPath */ "./node_modules/zrender/lib/graphic/CompoundPath.js");
+var CompoundPath = __webpack_require__(/*! @ftf/zrender/lib/graphic/CompoundPath */ "./node_modules/@ftf/zrender/lib/graphic/CompoundPath.js");
 
 exports.CompoundPath = CompoundPath;
 
-var LinearGradient = __webpack_require__(/*! zrender/lib/graphic/LinearGradient */ "./node_modules/zrender/lib/graphic/LinearGradient.js");
+var LinearGradient = __webpack_require__(/*! @ftf/zrender/lib/graphic/LinearGradient */ "./node_modules/@ftf/zrender/lib/graphic/LinearGradient.js");
 
 exports.LinearGradient = LinearGradient;
 
-var RadialGradient = __webpack_require__(/*! zrender/lib/graphic/RadialGradient */ "./node_modules/zrender/lib/graphic/RadialGradient.js");
+var RadialGradient = __webpack_require__(/*! @ftf/zrender/lib/graphic/RadialGradient */ "./node_modules/@ftf/zrender/lib/graphic/RadialGradient.js");
 
 exports.RadialGradient = RadialGradient;
 
-var BoundingRect = __webpack_require__(/*! zrender/lib/core/BoundingRect */ "./node_modules/zrender/lib/core/BoundingRect.js");
+var BoundingRect = __webpack_require__(/*! @ftf/zrender/lib/core/BoundingRect */ "./node_modules/@ftf/zrender/lib/core/BoundingRect.js");
 
 exports.BoundingRect = BoundingRect;
 
-var IncrementalDisplayable = __webpack_require__(/*! zrender/lib/graphic/IncrementalDisplayable */ "./node_modules/zrender/lib/graphic/IncrementalDisplayable.js");
+var IncrementalDisplayable = __webpack_require__(/*! @ftf/zrender/lib/graphic/IncrementalDisplayable */ "./node_modules/@ftf/zrender/lib/graphic/IncrementalDisplayable.js");
 
 exports.IncrementalDisplayable = IncrementalDisplayable;
 
-var subPixelOptimizeUtil = __webpack_require__(/*! zrender/lib/graphic/helper/subPixelOptimize */ "./node_modules/zrender/lib/graphic/helper/subPixelOptimize.js");
+var subPixelOptimizeUtil = __webpack_require__(/*! @ftf/zrender/lib/graphic/helper/subPixelOptimize */ "./node_modules/@ftf/zrender/lib/graphic/helper/subPixelOptimize.js");
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -3629,10 +3629,10 @@ exports.lineLineIntersect = lineLineIntersect;
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/util/model.js":
-/*!************************************************!*\
-  !*** ./node_modules/echarts/lib/util/model.js ***!
-  \************************************************/
+/***/ "./node_modules/@ftf/echarts/lib/util/model.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@ftf/echarts/lib/util/model.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3656,9 +3656,9 @@ exports.lineLineIntersect = lineLineIntersect;
 * under the License.
 */
 
-var zrUtil = __webpack_require__(/*! zrender/lib/core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! @ftf/zrender/lib/core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
-var env = __webpack_require__(/*! zrender/lib/core/env */ "./node_modules/zrender/lib/core/env.js");
+var env = __webpack_require__(/*! @ftf/zrender/lib/core/env */ "./node_modules/@ftf/zrender/lib/core/env.js");
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -4186,10 +4186,10 @@ exports.groupData = groupData;
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/util/symbol.js":
-/*!*************************************************!*\
-  !*** ./node_modules/echarts/lib/util/symbol.js ***!
-  \*************************************************/
+/***/ "./node_modules/@ftf/echarts/lib/util/symbol.js":
+/*!******************************************************!*\
+  !*** ./node_modules/@ftf/echarts/lib/util/symbol.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4213,13 +4213,13 @@ exports.groupData = groupData;
 * under the License.
 */
 
-var zrUtil = __webpack_require__(/*! zrender/lib/core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! @ftf/zrender/lib/core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
-var graphic = __webpack_require__(/*! ./graphic */ "./node_modules/echarts/lib/util/graphic.js");
+var graphic = __webpack_require__(/*! ./graphic */ "./node_modules/@ftf/echarts/lib/util/graphic.js");
 
-var BoundingRect = __webpack_require__(/*! zrender/lib/core/BoundingRect */ "./node_modules/zrender/lib/core/BoundingRect.js");
+var BoundingRect = __webpack_require__(/*! @ftf/zrender/lib/core/BoundingRect */ "./node_modules/@ftf/zrender/lib/core/BoundingRect.js");
 
-var _text = __webpack_require__(/*! zrender/lib/contain/text */ "./node_modules/zrender/lib/contain/text.js");
+var _text = __webpack_require__(/*! @ftf/zrender/lib/contain/text */ "./node_modules/@ftf/zrender/lib/contain/text.js");
 
 var calculateTextPosition = _text.calculateTextPosition;
 
@@ -4540,10 +4540,10 @@ exports.createSymbol = createSymbol;
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/visual/dataColor.js":
-/*!******************************************************!*\
-  !*** ./node_modules/echarts/lib/visual/dataColor.js ***!
-  \******************************************************/
+/***/ "./node_modules/@ftf/echarts/lib/visual/dataColor.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@ftf/echarts/lib/visual/dataColor.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4567,7 +4567,7 @@ exports.createSymbol = createSymbol;
 * under the License.
 */
 
-var _util = __webpack_require__(/*! zrender/lib/core/util */ "./node_modules/zrender/lib/core/util.js");
+var _util = __webpack_require__(/*! @ftf/zrender/lib/core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 var createHashMap = _util.createHashMap;
 
@@ -4648,53 +4648,22 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/webpack/buildin/global.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
-/***/ "./node_modules/zrender/lib/Element.js":
-/*!*********************************************!*\
-  !*** ./node_modules/zrender/lib/Element.js ***!
-  \*********************************************/
+/***/ "./node_modules/@ftf/zrender/lib/Element.js":
+/*!**************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/Element.js ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var guid = __webpack_require__(/*! ./core/guid */ "./node_modules/zrender/lib/core/guid.js");
+var guid = __webpack_require__(/*! ./core/guid */ "./node_modules/@ftf/zrender/lib/core/guid.js");
 
-var Eventful = __webpack_require__(/*! ./mixin/Eventful */ "./node_modules/zrender/lib/mixin/Eventful.js");
+var Eventful = __webpack_require__(/*! ./mixin/Eventful */ "./node_modules/@ftf/zrender/lib/mixin/Eventful.js");
 
-var Transformable = __webpack_require__(/*! ./mixin/Transformable */ "./node_modules/zrender/lib/mixin/Transformable.js");
+var Transformable = __webpack_require__(/*! ./mixin/Transformable */ "./node_modules/@ftf/zrender/lib/mixin/Transformable.js");
 
-var Animatable = __webpack_require__(/*! ./mixin/Animatable */ "./node_modules/zrender/lib/mixin/Animatable.js");
+var Animatable = __webpack_require__(/*! ./mixin/Animatable */ "./node_modules/@ftf/zrender/lib/mixin/Animatable.js");
 
-var zrUtil = __webpack_require__(/*! ./core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! ./core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 /**
  * @alias module:zrender/Element
@@ -4958,18 +4927,18 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/animation/Animator.js":
-/*!********************************************************!*\
-  !*** ./node_modules/zrender/lib/animation/Animator.js ***!
-  \********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/animation/Animator.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/animation/Animator.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Clip = __webpack_require__(/*! ./Clip */ "./node_modules/zrender/lib/animation/Clip.js");
+var Clip = __webpack_require__(/*! ./Clip */ "./node_modules/@ftf/zrender/lib/animation/Clip.js");
 
-var color = __webpack_require__(/*! ../tool/color */ "./node_modules/zrender/lib/tool/color.js");
+var color = __webpack_require__(/*! ../tool/color */ "./node_modules/@ftf/zrender/lib/tool/color.js");
 
-var _util = __webpack_require__(/*! ../core/util */ "./node_modules/zrender/lib/core/util.js");
+var _util = __webpack_require__(/*! ../core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 var isArrayLike = _util.isArrayLike;
 
@@ -5612,14 +5581,14 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/animation/Clip.js":
-/*!****************************************************!*\
-  !*** ./node_modules/zrender/lib/animation/Clip.js ***!
-  \****************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/animation/Clip.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/animation/Clip.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var easingFuncs = __webpack_require__(/*! ./easing */ "./node_modules/zrender/lib/animation/easing.js");
+var easingFuncs = __webpack_require__(/*! ./easing */ "./node_modules/@ftf/zrender/lib/animation/easing.js");
 
 /**
  * 动画主控制器
@@ -5723,10 +5692,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/animation/easing.js":
-/*!******************************************************!*\
-  !*** ./node_modules/zrender/lib/animation/easing.js ***!
-  \******************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/animation/easing.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/animation/easing.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -6111,10 +6080,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/config.js":
-/*!********************************************!*\
-  !*** ./node_modules/zrender/lib/config.js ***!
-  \********************************************/
+/***/ "./node_modules/@ftf/zrender/lib/config.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/config.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -6144,14 +6113,14 @@ exports.devicePixelRatio = devicePixelRatio;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/contain/arc.js":
-/*!*************************************************!*\
-  !*** ./node_modules/zrender/lib/contain/arc.js ***!
-  \*************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/contain/arc.js":
+/*!******************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/contain/arc.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _util = __webpack_require__(/*! ./util */ "./node_modules/zrender/lib/contain/util.js");
+var _util = __webpack_require__(/*! ./util */ "./node_modules/@ftf/zrender/lib/contain/util.js");
 
 var normalizeRadian = _util.normalizeRadian;
 var PI2 = Math.PI * 2;
@@ -6214,14 +6183,14 @@ exports.containStroke = containStroke;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/contain/cubic.js":
-/*!***************************************************!*\
-  !*** ./node_modules/zrender/lib/contain/cubic.js ***!
-  \***************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/contain/cubic.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/contain/cubic.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var curve = __webpack_require__(/*! ../core/curve */ "./node_modules/zrender/lib/core/curve.js");
+var curve = __webpack_require__(/*! ../core/curve */ "./node_modules/@ftf/zrender/lib/core/curve.js");
 
 /**
  * 三次贝塞尔曲线描边包含判断
@@ -6257,10 +6226,10 @@ exports.containStroke = containStroke;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/contain/line.js":
-/*!**************************************************!*\
-  !*** ./node_modules/zrender/lib/contain/line.js ***!
-  \**************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/contain/line.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/contain/line.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -6306,30 +6275,30 @@ exports.containStroke = containStroke;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/contain/path.js":
-/*!**************************************************!*\
-  !*** ./node_modules/zrender/lib/contain/path.js ***!
-  \**************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/contain/path.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/contain/path.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var PathProxy = __webpack_require__(/*! ../core/PathProxy */ "./node_modules/zrender/lib/core/PathProxy.js");
+var PathProxy = __webpack_require__(/*! ../core/PathProxy */ "./node_modules/@ftf/zrender/lib/core/PathProxy.js");
 
-var line = __webpack_require__(/*! ./line */ "./node_modules/zrender/lib/contain/line.js");
+var line = __webpack_require__(/*! ./line */ "./node_modules/@ftf/zrender/lib/contain/line.js");
 
-var cubic = __webpack_require__(/*! ./cubic */ "./node_modules/zrender/lib/contain/cubic.js");
+var cubic = __webpack_require__(/*! ./cubic */ "./node_modules/@ftf/zrender/lib/contain/cubic.js");
 
-var quadratic = __webpack_require__(/*! ./quadratic */ "./node_modules/zrender/lib/contain/quadratic.js");
+var quadratic = __webpack_require__(/*! ./quadratic */ "./node_modules/@ftf/zrender/lib/contain/quadratic.js");
 
-var arc = __webpack_require__(/*! ./arc */ "./node_modules/zrender/lib/contain/arc.js");
+var arc = __webpack_require__(/*! ./arc */ "./node_modules/@ftf/zrender/lib/contain/arc.js");
 
-var _util = __webpack_require__(/*! ./util */ "./node_modules/zrender/lib/contain/util.js");
+var _util = __webpack_require__(/*! ./util */ "./node_modules/@ftf/zrender/lib/contain/util.js");
 
 var normalizeRadian = _util.normalizeRadian;
 
-var curve = __webpack_require__(/*! ../core/curve */ "./node_modules/zrender/lib/core/curve.js");
+var curve = __webpack_require__(/*! ../core/curve */ "./node_modules/@ftf/zrender/lib/core/curve.js");
 
-var windingLine = __webpack_require__(/*! ./windingLine */ "./node_modules/zrender/lib/contain/windingLine.js");
+var windingLine = __webpack_require__(/*! ./windingLine */ "./node_modules/@ftf/zrender/lib/contain/windingLine.js");
 
 var CMD = PathProxy.CMD;
 var PI2 = Math.PI * 2;
@@ -6712,14 +6681,14 @@ exports.containStroke = containStroke;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/contain/quadratic.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/zrender/lib/contain/quadratic.js ***!
-  \*******************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/contain/quadratic.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/contain/quadratic.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _curve = __webpack_require__(/*! ../core/curve */ "./node_modules/zrender/lib/core/curve.js");
+var _curve = __webpack_require__(/*! ../core/curve */ "./node_modules/@ftf/zrender/lib/core/curve.js");
 
 var quadraticProjectPoint = _curve.quadraticProjectPoint;
 
@@ -6755,18 +6724,18 @@ exports.containStroke = containStroke;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/contain/text.js":
-/*!**************************************************!*\
-  !*** ./node_modules/zrender/lib/contain/text.js ***!
-  \**************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/contain/text.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/contain/text.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var BoundingRect = __webpack_require__(/*! ../core/BoundingRect */ "./node_modules/zrender/lib/core/BoundingRect.js");
+var BoundingRect = __webpack_require__(/*! ../core/BoundingRect */ "./node_modules/@ftf/zrender/lib/core/BoundingRect.js");
 
-var imageHelper = __webpack_require__(/*! ../graphic/helper/image */ "./node_modules/zrender/lib/graphic/helper/image.js");
+var imageHelper = __webpack_require__(/*! ../graphic/helper/image */ "./node_modules/@ftf/zrender/lib/graphic/helper/image.js");
 
-var _util = __webpack_require__(/*! ../core/util */ "./node_modules/zrender/lib/core/util.js");
+var _util = __webpack_require__(/*! ../core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 var getContext = _util.getContext;
 var extend = _util.extend;
@@ -7484,10 +7453,10 @@ exports.makeFont = makeFont;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/contain/util.js":
-/*!**************************************************!*\
-  !*** ./node_modules/zrender/lib/contain/util.js ***!
-  \**************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/contain/util.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/contain/util.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -7507,10 +7476,10 @@ exports.normalizeRadian = normalizeRadian;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/contain/windingLine.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/zrender/lib/contain/windingLine.js ***!
-  \*********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/contain/windingLine.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/contain/windingLine.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -7540,18 +7509,18 @@ module.exports = windingLine;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/container/Group.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/zrender/lib/container/Group.js ***!
-  \*****************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/container/Group.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/container/Group.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
-var Element = __webpack_require__(/*! ../Element */ "./node_modules/zrender/lib/Element.js");
+var Element = __webpack_require__(/*! ../Element */ "./node_modules/@ftf/zrender/lib/Element.js");
 
-var BoundingRect = __webpack_require__(/*! ../core/BoundingRect */ "./node_modules/zrender/lib/core/BoundingRect.js");
+var BoundingRect = __webpack_require__(/*! ../core/BoundingRect */ "./node_modules/@ftf/zrender/lib/core/BoundingRect.js");
 
 /**
  * Group是一个容器，可以插入子节点，Group的变换也会被应用到子节点上
@@ -7862,16 +7831,16 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/core/BoundingRect.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/zrender/lib/core/BoundingRect.js ***!
-  \*******************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/core/BoundingRect.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/core/BoundingRect.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var vec2 = __webpack_require__(/*! ./vector */ "./node_modules/zrender/lib/core/vector.js");
+var vec2 = __webpack_require__(/*! ./vector */ "./node_modules/@ftf/zrender/lib/core/vector.js");
 
-var matrix = __webpack_require__(/*! ./matrix */ "./node_modules/zrender/lib/core/matrix.js");
+var matrix = __webpack_require__(/*! ./matrix */ "./node_modules/@ftf/zrender/lib/core/matrix.js");
 
 /**
  * @module echarts/core/BoundingRect
@@ -8055,10 +8024,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/core/LRU.js":
-/*!**********************************************!*\
-  !*** ./node_modules/zrender/lib/core/LRU.js ***!
-  \**********************************************/
+/***/ "./node_modules/@ftf/zrender/lib/core/LRU.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/core/LRU.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8267,22 +8236,22 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/core/PathProxy.js":
-/*!****************************************************!*\
-  !*** ./node_modules/zrender/lib/core/PathProxy.js ***!
-  \****************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/core/PathProxy.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/core/PathProxy.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var curve = __webpack_require__(/*! ./curve */ "./node_modules/zrender/lib/core/curve.js");
+var curve = __webpack_require__(/*! ./curve */ "./node_modules/@ftf/zrender/lib/core/curve.js");
 
-var vec2 = __webpack_require__(/*! ./vector */ "./node_modules/zrender/lib/core/vector.js");
+var vec2 = __webpack_require__(/*! ./vector */ "./node_modules/@ftf/zrender/lib/core/vector.js");
 
-var bbox = __webpack_require__(/*! ./bbox */ "./node_modules/zrender/lib/core/bbox.js");
+var bbox = __webpack_require__(/*! ./bbox */ "./node_modules/@ftf/zrender/lib/core/bbox.js");
 
-var BoundingRect = __webpack_require__(/*! ./BoundingRect */ "./node_modules/zrender/lib/core/BoundingRect.js");
+var BoundingRect = __webpack_require__(/*! ./BoundingRect */ "./node_modules/@ftf/zrender/lib/core/BoundingRect.js");
 
-var _config = __webpack_require__(/*! ../config */ "./node_modules/zrender/lib/config.js");
+var _config = __webpack_require__(/*! ../config */ "./node_modules/@ftf/zrender/lib/config.js");
 
 var dpr = _config.devicePixelRatio;
 
@@ -9047,16 +9016,16 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/core/bbox.js":
-/*!***********************************************!*\
-  !*** ./node_modules/zrender/lib/core/bbox.js ***!
-  \***********************************************/
+/***/ "./node_modules/@ftf/zrender/lib/core/bbox.js":
+/*!****************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/core/bbox.js ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var vec2 = __webpack_require__(/*! ./vector */ "./node_modules/zrender/lib/core/vector.js");
+var vec2 = __webpack_require__(/*! ./vector */ "./node_modules/@ftf/zrender/lib/core/vector.js");
 
-var curve = __webpack_require__(/*! ./curve */ "./node_modules/zrender/lib/core/curve.js");
+var curve = __webpack_require__(/*! ./curve */ "./node_modules/@ftf/zrender/lib/core/curve.js");
 
 /**
  * @author Yi Shen(https://github.com/pissang)
@@ -9278,14 +9247,14 @@ exports.fromArc = fromArc;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/core/curve.js":
-/*!************************************************!*\
-  !*** ./node_modules/zrender/lib/core/curve.js ***!
-  \************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/core/curve.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/core/curve.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _vector = __webpack_require__(/*! ./vector */ "./node_modules/zrender/lib/core/vector.js");
+var _vector = __webpack_require__(/*! ./vector */ "./node_modules/@ftf/zrender/lib/core/vector.js");
 
 var v2Create = _vector.create;
 var v2DistSquare = _vector.distSquare;
@@ -9820,10 +9789,10 @@ exports.quadraticProjectPoint = quadraticProjectPoint;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/core/env.js":
-/*!**********************************************!*\
-  !*** ./node_modules/zrender/lib/core/env.js ***!
-  \**********************************************/
+/***/ "./node_modules/@ftf/zrender/lib/core/env.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/core/env.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -9846,6 +9815,19 @@ if (typeof wx === 'object' && typeof wx.getSystemInfoSync === 'function') {
     node: false,
     wxa: true,
     // Weixin Application
+    canvasSupported: true,
+    svgSupported: false,
+    touchEventsSupported: true,
+    domSupported: false
+  };
+} else if (typeof jd === 'object' && typeof jd.getSystemInfoSync === 'function') {
+  // In JingDong Application
+  env = {
+    browser: {},
+    os: {},
+    node: false,
+    jda: true,
+    // JingDong Application
     canvasSupported: true,
     svgSupported: false,
     touchEventsSupported: true,
@@ -10000,10 +9982,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/core/guid.js":
-/*!***********************************************!*\
-  !*** ./node_modules/zrender/lib/core/guid.js ***!
-  \***********************************************/
+/***/ "./node_modules/@ftf/zrender/lib/core/guid.js":
+/*!****************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/core/guid.js ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -10022,14 +10004,14 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/core/log.js":
-/*!**********************************************!*\
-  !*** ./node_modules/zrender/lib/core/log.js ***!
-  \**********************************************/
+/***/ "./node_modules/@ftf/zrender/lib/core/log.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/core/log.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _config = __webpack_require__(/*! ../config */ "./node_modules/zrender/lib/config.js");
+var _config = __webpack_require__(/*! ../config */ "./node_modules/@ftf/zrender/lib/config.js");
 
 var debugMode = _config.debugMode;
 
@@ -10044,10 +10026,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/core/matrix.js":
-/*!*************************************************!*\
-  !*** ./node_modules/zrender/lib/core/matrix.js ***!
-  \*************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/core/matrix.js":
+/*!******************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/core/matrix.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -10239,10 +10221,10 @@ exports.clone = clone;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/core/util.js":
-/*!***********************************************!*\
-  !*** ./node_modules/zrender/lib/core/util.js ***!
-  \***********************************************/
+/***/ "./node_modules/@ftf/zrender/lib/core/util.js":
+/*!****************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/core/util.js ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -10989,10 +10971,10 @@ exports.noop = noop;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/core/vector.js":
-/*!*************************************************!*\
-  !*** ./node_modules/zrender/lib/core/vector.js ***!
-  \*************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/core/vector.js":
+/*!******************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/core/vector.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -11313,14 +11295,14 @@ exports.max = max;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/CompoundPath.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/CompoundPath.js ***!
-  \**********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/CompoundPath.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/CompoundPath.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Path = __webpack_require__(/*! ./Path */ "./node_modules/zrender/lib/graphic/Path.js");
+var Path = __webpack_require__(/*! ./Path */ "./node_modules/@ftf/zrender/lib/graphic/Path.js");
 
 // CompoundPath to improve performance
 var _default = Path.extend({
@@ -11379,20 +11361,20 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/Displayable.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/Displayable.js ***!
-  \*********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/Displayable.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/Displayable.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
-var Style = __webpack_require__(/*! ./Style */ "./node_modules/zrender/lib/graphic/Style.js");
+var Style = __webpack_require__(/*! ./Style */ "./node_modules/@ftf/zrender/lib/graphic/Style.js");
 
-var Element = __webpack_require__(/*! ../Element */ "./node_modules/zrender/lib/Element.js");
+var Element = __webpack_require__(/*! ../Element */ "./node_modules/@ftf/zrender/lib/Element.js");
 
-var RectText = __webpack_require__(/*! ./mixin/RectText */ "./node_modules/zrender/lib/graphic/mixin/RectText.js");
+var RectText = __webpack_require__(/*! ./mixin/RectText */ "./node_modules/@ftf/zrender/lib/graphic/mixin/RectText.js");
 
 /**
  * Base class of all displayable graphic objects
@@ -11666,10 +11648,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/Gradient.js":
-/*!******************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/Gradient.js ***!
-  \******************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/Gradient.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/Gradient.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -11694,20 +11676,20 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/Image.js":
-/*!***************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/Image.js ***!
-  \***************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/Image.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/Image.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Displayable = __webpack_require__(/*! ./Displayable */ "./node_modules/zrender/lib/graphic/Displayable.js");
+var Displayable = __webpack_require__(/*! ./Displayable */ "./node_modules/@ftf/zrender/lib/graphic/Displayable.js");
 
-var BoundingRect = __webpack_require__(/*! ../core/BoundingRect */ "./node_modules/zrender/lib/core/BoundingRect.js");
+var BoundingRect = __webpack_require__(/*! ../core/BoundingRect */ "./node_modules/@ftf/zrender/lib/core/BoundingRect.js");
 
-var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
-var imageHelper = __webpack_require__(/*! ./helper/image */ "./node_modules/zrender/lib/graphic/helper/image.js");
+var imageHelper = __webpack_require__(/*! ./helper/image */ "./node_modules/@ftf/zrender/lib/graphic/helper/image.js");
 
 /**
  * @alias zrender/graphic/Image
@@ -11796,20 +11778,20 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/IncrementalDisplayable.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/IncrementalDisplayable.js ***!
-  \********************************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/IncrementalDisplayable.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/IncrementalDisplayable.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _util = __webpack_require__(/*! ../core/util */ "./node_modules/zrender/lib/core/util.js");
+var _util = __webpack_require__(/*! ../core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 var inherits = _util.inherits;
 
-var Displayble = __webpack_require__(/*! ./Displayable */ "./node_modules/zrender/lib/graphic/Displayable.js");
+var Displayble = __webpack_require__(/*! ./Displayable */ "./node_modules/@ftf/zrender/lib/graphic/Displayable.js");
 
-var BoundingRect = __webpack_require__(/*! ../core/BoundingRect */ "./node_modules/zrender/lib/core/BoundingRect.js");
+var BoundingRect = __webpack_require__(/*! ../core/BoundingRect */ "./node_modules/@ftf/zrender/lib/core/BoundingRect.js");
 
 /**
  * Displayable for incremental rendering. It will be rendered in a separate layer
@@ -11953,16 +11935,16 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/LinearGradient.js":
-/*!************************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/LinearGradient.js ***!
-  \************************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/LinearGradient.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/LinearGradient.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
-var Gradient = __webpack_require__(/*! ./Gradient */ "./node_modules/zrender/lib/graphic/Gradient.js");
+var Gradient = __webpack_require__(/*! ./Gradient */ "./node_modules/@ftf/zrender/lib/graphic/Gradient.js");
 
 /**
  * x, y, x2, y2 are all percent from 0 to 1
@@ -11997,22 +11979,22 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/Path.js":
-/*!**************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/Path.js ***!
-  \**************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/Path.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/Path.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Displayable = __webpack_require__(/*! ./Displayable */ "./node_modules/zrender/lib/graphic/Displayable.js");
+var Displayable = __webpack_require__(/*! ./Displayable */ "./node_modules/@ftf/zrender/lib/graphic/Displayable.js");
 
-var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
-var PathProxy = __webpack_require__(/*! ../core/PathProxy */ "./node_modules/zrender/lib/core/PathProxy.js");
+var PathProxy = __webpack_require__(/*! ../core/PathProxy */ "./node_modules/@ftf/zrender/lib/core/PathProxy.js");
 
-var pathContain = __webpack_require__(/*! ../contain/path */ "./node_modules/zrender/lib/contain/path.js");
+var pathContain = __webpack_require__(/*! ../contain/path */ "./node_modules/@ftf/zrender/lib/contain/path.js");
 
-var Pattern = __webpack_require__(/*! ./Pattern */ "./node_modules/zrender/lib/graphic/Pattern.js");
+var Pattern = __webpack_require__(/*! ./Pattern */ "./node_modules/@ftf/zrender/lib/graphic/Pattern.js");
 
 var getCanvasPattern = Pattern.prototype.getCanvasPattern;
 var abs = Math.abs;
@@ -12385,10 +12367,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/Pattern.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/Pattern.js ***!
-  \*****************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/Pattern.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/Pattern.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -12410,16 +12392,16 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/RadialGradient.js":
-/*!************************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/RadialGradient.js ***!
-  \************************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/RadialGradient.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/RadialGradient.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
-var Gradient = __webpack_require__(/*! ./Gradient */ "./node_modules/zrender/lib/graphic/Gradient.js");
+var Gradient = __webpack_require__(/*! ./Gradient */ "./node_modules/@ftf/zrender/lib/graphic/Gradient.js");
 
 /**
  * x, y, r are all percent from 0 to 1
@@ -12452,16 +12434,16 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/Style.js":
-/*!***************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/Style.js ***!
-  \***************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/Style.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/Style.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fixShadow = __webpack_require__(/*! ./helper/fixShadow */ "./node_modules/zrender/lib/graphic/helper/fixShadow.js");
+var fixShadow = __webpack_require__(/*! ./helper/fixShadow */ "./node_modules/@ftf/zrender/lib/graphic/helper/fixShadow.js");
 
-var _constant = __webpack_require__(/*! ./constant */ "./node_modules/zrender/lib/graphic/constant.js");
+var _constant = __webpack_require__(/*! ./constant */ "./node_modules/@ftf/zrender/lib/graphic/constant.js");
 
 var ContextCachedBy = _constant.ContextCachedBy;
 var STYLE_COMMON_PROPS = [['shadowBlur', 0], ['shadowOffsetX', 0], ['shadowOffsetY', 0], ['shadowColor', '#000'], ['lineCap', 'butt'], ['lineJoin', 'miter'], ['miterLimit', 10]]; // var SHADOW_PROPS = STYLE_COMMON_PROPS.slice(0, 4);
@@ -12939,22 +12921,22 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/Text.js":
-/*!**************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/Text.js ***!
-  \**************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/Text.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/Text.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Displayable = __webpack_require__(/*! ./Displayable */ "./node_modules/zrender/lib/graphic/Displayable.js");
+var Displayable = __webpack_require__(/*! ./Displayable */ "./node_modules/@ftf/zrender/lib/graphic/Displayable.js");
 
-var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/zrender/lib/core/util.js");
+var zrUtil = __webpack_require__(/*! ../core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
-var textContain = __webpack_require__(/*! ../contain/text */ "./node_modules/zrender/lib/contain/text.js");
+var textContain = __webpack_require__(/*! ../contain/text */ "./node_modules/@ftf/zrender/lib/contain/text.js");
 
-var textHelper = __webpack_require__(/*! ./helper/text */ "./node_modules/zrender/lib/graphic/helper/text.js");
+var textHelper = __webpack_require__(/*! ./helper/text */ "./node_modules/@ftf/zrender/lib/graphic/helper/text.js");
 
-var _constant = __webpack_require__(/*! ./constant */ "./node_modules/zrender/lib/graphic/constant.js");
+var _constant = __webpack_require__(/*! ./constant */ "./node_modules/@ftf/zrender/lib/graphic/constant.js");
 
 var ContextCachedBy = _constant.ContextCachedBy;
 
@@ -13028,10 +13010,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/constant.js":
-/*!******************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/constant.js ***!
-  \******************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/constant.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/constant.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -13047,14 +13029,14 @@ exports.WILL_BE_RESTORED = WILL_BE_RESTORED;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/helper/fixClipWithShadow.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/helper/fixClipWithShadow.js ***!
-  \**********************************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/helper/fixClipWithShadow.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/helper/fixClipWithShadow.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var env = __webpack_require__(/*! ../../core/env */ "./node_modules/zrender/lib/core/env.js");
+var env = __webpack_require__(/*! ../../core/env */ "./node_modules/@ftf/zrender/lib/core/env.js");
 
 // Fix weird bug in some version of IE11 (like 11.0.9600.178**),
 // where exception "unexpected call to method or property access"
@@ -13113,10 +13095,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/helper/fixShadow.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/helper/fixShadow.js ***!
-  \**************************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/helper/fixShadow.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/helper/fixShadow.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -13144,14 +13126,14 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/helper/image.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/helper/image.js ***!
-  \**********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/helper/image.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/helper/image.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var LRU = __webpack_require__(/*! ../../core/LRU */ "./node_modules/zrender/lib/core/LRU.js");
+var LRU = __webpack_require__(/*! ../../core/LRU */ "./node_modules/@ftf/zrender/lib/core/LRU.js");
 
 var globalImageCache = new LRU(50);
 /**
@@ -13242,16 +13224,16 @@ exports.isImageReady = isImageReady;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/helper/poly.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/helper/poly.js ***!
-  \*********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/helper/poly.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/helper/poly.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var smoothSpline = __webpack_require__(/*! ./smoothSpline */ "./node_modules/zrender/lib/graphic/helper/smoothSpline.js");
+var smoothSpline = __webpack_require__(/*! ./smoothSpline */ "./node_modules/@ftf/zrender/lib/graphic/helper/smoothSpline.js");
 
-var smoothBezier = __webpack_require__(/*! ./smoothBezier */ "./node_modules/zrender/lib/graphic/helper/smoothBezier.js");
+var smoothBezier = __webpack_require__(/*! ./smoothBezier */ "./node_modules/@ftf/zrender/lib/graphic/helper/smoothBezier.js");
 
 function buildPath(ctx, shape, closePath) {
   var points = shape.points;
@@ -13289,10 +13271,10 @@ exports.buildPath = buildPath;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/helper/roundRect.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/helper/roundRect.js ***!
-  \**************************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/helper/roundRect.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/helper/roundRect.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -13389,14 +13371,14 @@ exports.buildPath = buildPath;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/helper/smoothBezier.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/helper/smoothBezier.js ***!
-  \*****************************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/helper/smoothBezier.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/helper/smoothBezier.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _vector = __webpack_require__(/*! ../../core/vector */ "./node_modules/zrender/lib/core/vector.js");
+var _vector = __webpack_require__(/*! ../../core/vector */ "./node_modules/@ftf/zrender/lib/core/vector.js");
 
 var v2Min = _vector.min;
 var v2Max = _vector.max;
@@ -13504,14 +13486,14 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/helper/smoothSpline.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/helper/smoothSpline.js ***!
-  \*****************************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/helper/smoothSpline.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/helper/smoothSpline.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _vector = __webpack_require__(/*! ../../core/vector */ "./node_modules/zrender/lib/core/vector.js");
+var _vector = __webpack_require__(/*! ../../core/vector */ "./node_modules/@ftf/zrender/lib/core/vector.js");
 
 var v2Distance = _vector.distance;
 
@@ -13582,10 +13564,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/helper/subPixelOptimize.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/helper/subPixelOptimize.js ***!
-  \*********************************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/helper/subPixelOptimize.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/helper/subPixelOptimize.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -13705,14 +13687,14 @@ exports.subPixelOptimize = subPixelOptimize;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/helper/text.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/helper/text.js ***!
-  \*********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/helper/text.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/helper/text.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _util = __webpack_require__(/*! ../../core/util */ "./node_modules/zrender/lib/core/util.js");
+var _util = __webpack_require__(/*! ../../core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 var retrieve2 = _util.retrieve2;
 var retrieve3 = _util.retrieve3;
@@ -13721,15 +13703,15 @@ var normalizeCssArray = _util.normalizeCssArray;
 var isString = _util.isString;
 var isObject = _util.isObject;
 
-var textContain = __webpack_require__(/*! ../../contain/text */ "./node_modules/zrender/lib/contain/text.js");
+var textContain = __webpack_require__(/*! ../../contain/text */ "./node_modules/@ftf/zrender/lib/contain/text.js");
 
-var roundRectHelper = __webpack_require__(/*! ./roundRect */ "./node_modules/zrender/lib/graphic/helper/roundRect.js");
+var roundRectHelper = __webpack_require__(/*! ./roundRect */ "./node_modules/@ftf/zrender/lib/graphic/helper/roundRect.js");
 
-var imageHelper = __webpack_require__(/*! ./image */ "./node_modules/zrender/lib/graphic/helper/image.js");
+var imageHelper = __webpack_require__(/*! ./image */ "./node_modules/@ftf/zrender/lib/graphic/helper/image.js");
 
-var fixShadow = __webpack_require__(/*! ./fixShadow */ "./node_modules/zrender/lib/graphic/helper/fixShadow.js");
+var fixShadow = __webpack_require__(/*! ./fixShadow */ "./node_modules/@ftf/zrender/lib/graphic/helper/fixShadow.js");
 
-var _constant = __webpack_require__(/*! ../constant */ "./node_modules/zrender/lib/graphic/constant.js");
+var _constant = __webpack_require__(/*! ../constant */ "./node_modules/@ftf/zrender/lib/graphic/constant.js");
 
 var ContextCachedBy = _constant.ContextCachedBy;
 var WILL_BE_RESTORED = _constant.WILL_BE_RESTORED;
@@ -14262,18 +14244,18 @@ exports.needDrawText = needDrawText;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/mixin/RectText.js":
-/*!************************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/mixin/RectText.js ***!
-  \************************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/mixin/RectText.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/mixin/RectText.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var textHelper = __webpack_require__(/*! ../helper/text */ "./node_modules/zrender/lib/graphic/helper/text.js");
+var textHelper = __webpack_require__(/*! ../helper/text */ "./node_modules/@ftf/zrender/lib/graphic/helper/text.js");
 
-var BoundingRect = __webpack_require__(/*! ../../core/BoundingRect */ "./node_modules/zrender/lib/core/BoundingRect.js");
+var BoundingRect = __webpack_require__(/*! ../../core/BoundingRect */ "./node_modules/@ftf/zrender/lib/core/BoundingRect.js");
 
-var _constant = __webpack_require__(/*! ../constant */ "./node_modules/zrender/lib/graphic/constant.js");
+var _constant = __webpack_require__(/*! ../constant */ "./node_modules/@ftf/zrender/lib/graphic/constant.js");
 
 var WILL_BE_RESTORED = _constant.WILL_BE_RESTORED;
 
@@ -14334,14 +14316,14 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/shape/Arc.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/shape/Arc.js ***!
-  \*******************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/shape/Arc.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/shape/Arc.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Path = __webpack_require__(/*! ../Path */ "./node_modules/zrender/lib/graphic/Path.js");
+var Path = __webpack_require__(/*! ../Path */ "./node_modules/@ftf/zrender/lib/graphic/Path.js");
 
 /**
  * 圆弧
@@ -14379,18 +14361,18 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/shape/BezierCurve.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/shape/BezierCurve.js ***!
-  \***************************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/shape/BezierCurve.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/shape/BezierCurve.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Path = __webpack_require__(/*! ../Path */ "./node_modules/zrender/lib/graphic/Path.js");
+var Path = __webpack_require__(/*! ../Path */ "./node_modules/@ftf/zrender/lib/graphic/Path.js");
 
-var vec2 = __webpack_require__(/*! ../../core/vector */ "./node_modules/zrender/lib/core/vector.js");
+var vec2 = __webpack_require__(/*! ../../core/vector */ "./node_modules/@ftf/zrender/lib/core/vector.js");
 
-var _curve = __webpack_require__(/*! ../../core/curve */ "./node_modules/zrender/lib/core/curve.js");
+var _curve = __webpack_require__(/*! ../../core/curve */ "./node_modules/@ftf/zrender/lib/core/curve.js");
 
 var quadraticSubdivide = _curve.quadraticSubdivide;
 var cubicSubdivide = _curve.cubicSubdivide;
@@ -14502,14 +14484,14 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/shape/Circle.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/shape/Circle.js ***!
-  \**********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/shape/Circle.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/shape/Circle.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Path = __webpack_require__(/*! ../Path */ "./node_modules/zrender/lib/graphic/Path.js");
+var Path = __webpack_require__(/*! ../Path */ "./node_modules/@ftf/zrender/lib/graphic/Path.js");
 
 /**
  * 圆形
@@ -14544,16 +14526,16 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/shape/Line.js":
-/*!********************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/shape/Line.js ***!
-  \********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/shape/Line.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/shape/Line.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Path = __webpack_require__(/*! ../Path */ "./node_modules/zrender/lib/graphic/Path.js");
+var Path = __webpack_require__(/*! ../Path */ "./node_modules/@ftf/zrender/lib/graphic/Path.js");
 
-var _subPixelOptimize = __webpack_require__(/*! ../helper/subPixelOptimize */ "./node_modules/zrender/lib/graphic/helper/subPixelOptimize.js");
+var _subPixelOptimize = __webpack_require__(/*! ../helper/subPixelOptimize */ "./node_modules/@ftf/zrender/lib/graphic/helper/subPixelOptimize.js");
 
 var subPixelOptimizeLine = _subPixelOptimize.subPixelOptimizeLine;
 
@@ -14629,16 +14611,16 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/shape/Polygon.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/shape/Polygon.js ***!
-  \***********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/shape/Polygon.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/shape/Polygon.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Path = __webpack_require__(/*! ../Path */ "./node_modules/zrender/lib/graphic/Path.js");
+var Path = __webpack_require__(/*! ../Path */ "./node_modules/@ftf/zrender/lib/graphic/Path.js");
 
-var polyHelper = __webpack_require__(/*! ../helper/poly */ "./node_modules/zrender/lib/graphic/helper/poly.js");
+var polyHelper = __webpack_require__(/*! ../helper/poly */ "./node_modules/@ftf/zrender/lib/graphic/helper/poly.js");
 
 /**
  * 多边形
@@ -14660,16 +14642,16 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/shape/Polyline.js":
-/*!************************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/shape/Polyline.js ***!
-  \************************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/shape/Polyline.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/shape/Polyline.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Path = __webpack_require__(/*! ../Path */ "./node_modules/zrender/lib/graphic/Path.js");
+var Path = __webpack_require__(/*! ../Path */ "./node_modules/@ftf/zrender/lib/graphic/Path.js");
 
-var polyHelper = __webpack_require__(/*! ../helper/poly */ "./node_modules/zrender/lib/graphic/helper/poly.js");
+var polyHelper = __webpack_require__(/*! ../helper/poly */ "./node_modules/@ftf/zrender/lib/graphic/helper/poly.js");
 
 /**
  * @module zrender/graphic/shape/Polyline
@@ -14694,18 +14676,18 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/shape/Rect.js":
-/*!********************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/shape/Rect.js ***!
-  \********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/shape/Rect.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/shape/Rect.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Path = __webpack_require__(/*! ../Path */ "./node_modules/zrender/lib/graphic/Path.js");
+var Path = __webpack_require__(/*! ../Path */ "./node_modules/@ftf/zrender/lib/graphic/Path.js");
 
-var roundRectHelper = __webpack_require__(/*! ../helper/roundRect */ "./node_modules/zrender/lib/graphic/helper/roundRect.js");
+var roundRectHelper = __webpack_require__(/*! ../helper/roundRect */ "./node_modules/@ftf/zrender/lib/graphic/helper/roundRect.js");
 
-var _subPixelOptimize = __webpack_require__(/*! ../helper/subPixelOptimize */ "./node_modules/zrender/lib/graphic/helper/subPixelOptimize.js");
+var _subPixelOptimize = __webpack_require__(/*! ../helper/subPixelOptimize */ "./node_modules/@ftf/zrender/lib/graphic/helper/subPixelOptimize.js");
 
 var subPixelOptimizeRect = _subPixelOptimize.subPixelOptimizeRect;
 
@@ -14766,14 +14748,14 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/shape/Ring.js":
-/*!********************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/shape/Ring.js ***!
-  \********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/shape/Ring.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/shape/Ring.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Path = __webpack_require__(/*! ../Path */ "./node_modules/zrender/lib/graphic/Path.js");
+var Path = __webpack_require__(/*! ../Path */ "./node_modules/@ftf/zrender/lib/graphic/Path.js");
 
 /**
  * 圆环
@@ -14802,16 +14784,16 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/graphic/shape/Sector.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/zrender/lib/graphic/shape/Sector.js ***!
-  \**********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/graphic/shape/Sector.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/graphic/shape/Sector.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Path = __webpack_require__(/*! ../Path */ "./node_modules/zrender/lib/graphic/Path.js");
+var Path = __webpack_require__(/*! ../Path */ "./node_modules/@ftf/zrender/lib/graphic/Path.js");
 
-var fixClipWithShadow = __webpack_require__(/*! ../helper/fixClipWithShadow */ "./node_modules/zrender/lib/graphic/helper/fixClipWithShadow.js");
+var fixClipWithShadow = __webpack_require__(/*! ../helper/fixClipWithShadow */ "./node_modules/@ftf/zrender/lib/graphic/helper/fixClipWithShadow.js");
 
 /**
  * 扇形
@@ -14856,18 +14838,18 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/mixin/Animatable.js":
-/*!******************************************************!*\
-  !*** ./node_modules/zrender/lib/mixin/Animatable.js ***!
-  \******************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/mixin/Animatable.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/mixin/Animatable.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Animator = __webpack_require__(/*! ../animation/Animator */ "./node_modules/zrender/lib/animation/Animator.js");
+var Animator = __webpack_require__(/*! ../animation/Animator */ "./node_modules/@ftf/zrender/lib/animation/Animator.js");
 
-var logError = __webpack_require__(/*! ../core/log */ "./node_modules/zrender/lib/core/log.js");
+var logError = __webpack_require__(/*! ../core/log */ "./node_modules/@ftf/zrender/lib/core/log.js");
 
-var _util = __webpack_require__(/*! ../core/util */ "./node_modules/zrender/lib/core/util.js");
+var _util = __webpack_require__(/*! ../core/util */ "./node_modules/@ftf/zrender/lib/core/util.js");
 
 var isString = _util.isString;
 var isFunction = _util.isFunction;
@@ -15141,10 +15123,10 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/mixin/Eventful.js":
-/*!****************************************************!*\
-  !*** ./node_modules/zrender/lib/mixin/Eventful.js ***!
-  \****************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/mixin/Eventful.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/mixin/Eventful.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -15522,16 +15504,16 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/mixin/Transformable.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/zrender/lib/mixin/Transformable.js ***!
-  \*********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/mixin/Transformable.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/mixin/Transformable.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var matrix = __webpack_require__(/*! ../core/matrix */ "./node_modules/zrender/lib/core/matrix.js");
+var matrix = __webpack_require__(/*! ../core/matrix */ "./node_modules/@ftf/zrender/lib/core/matrix.js");
 
-var vector = __webpack_require__(/*! ../core/vector */ "./node_modules/zrender/lib/core/vector.js");
+var vector = __webpack_require__(/*! ../core/vector */ "./node_modules/@ftf/zrender/lib/core/vector.js");
 
 /**
  * 提供变换扩展
@@ -15856,14 +15838,14 @@ module.exports = _default;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/tool/color.js":
-/*!************************************************!*\
-  !*** ./node_modules/zrender/lib/tool/color.js ***!
-  \************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/tool/color.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/tool/color.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var LRU = __webpack_require__(/*! ../core/LRU */ "./node_modules/zrender/lib/core/LRU.js");
+var LRU = __webpack_require__(/*! ../core/LRU */ "./node_modules/@ftf/zrender/lib/core/LRU.js");
 
 var kCSSColorTable = {
   'transparent': [0, 0, 0, 0],
@@ -16493,18 +16475,18 @@ exports.stringify = stringify;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/tool/path.js":
-/*!***********************************************!*\
-  !*** ./node_modules/zrender/lib/tool/path.js ***!
-  \***********************************************/
+/***/ "./node_modules/@ftf/zrender/lib/tool/path.js":
+/*!****************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/tool/path.js ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Path = __webpack_require__(/*! ../graphic/Path */ "./node_modules/zrender/lib/graphic/Path.js");
+var Path = __webpack_require__(/*! ../graphic/Path */ "./node_modules/@ftf/zrender/lib/graphic/Path.js");
 
-var PathProxy = __webpack_require__(/*! ../core/PathProxy */ "./node_modules/zrender/lib/core/PathProxy.js");
+var PathProxy = __webpack_require__(/*! ../core/PathProxy */ "./node_modules/@ftf/zrender/lib/core/PathProxy.js");
 
-var transformPath = __webpack_require__(/*! ./transformPath */ "./node_modules/zrender/lib/tool/transformPath.js");
+var transformPath = __webpack_require__(/*! ./transformPath */ "./node_modules/@ftf/zrender/lib/tool/transformPath.js");
 
 // command chars
 // var cc = [
@@ -16943,16 +16925,16 @@ exports.mergePath = mergePath;
 
 /***/ }),
 
-/***/ "./node_modules/zrender/lib/tool/transformPath.js":
-/*!********************************************************!*\
-  !*** ./node_modules/zrender/lib/tool/transformPath.js ***!
-  \********************************************************/
+/***/ "./node_modules/@ftf/zrender/lib/tool/transformPath.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@ftf/zrender/lib/tool/transformPath.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var PathProxy = __webpack_require__(/*! ../core/PathProxy */ "./node_modules/zrender/lib/core/PathProxy.js");
+var PathProxy = __webpack_require__(/*! ../core/PathProxy */ "./node_modules/@ftf/zrender/lib/core/PathProxy.js");
 
-var _vector = __webpack_require__(/*! ../core/vector */ "./node_modules/zrender/lib/core/vector.js");
+var _vector = __webpack_require__(/*! ../core/vector */ "./node_modules/@ftf/zrender/lib/core/vector.js");
 
 var v2ApplyTransform = _vector.applyTransform;
 var CMD = PathProxy.CMD;
@@ -17053,6 +17035,37 @@ module.exports = _default;
 
 /***/ }),
 
+/***/ "./node_modules/webpack/buildin/global.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
 /***/ "./src/liquidFill.js":
 /*!***************************!*\
   !*** ./src/liquidFill.js ***!
@@ -17068,7 +17081,7 @@ __webpack_require__(/*! ./liquidFillView */ "./src/liquidFillView.js");
 
 echarts.registerVisual(
     echarts.util.curry(
-        __webpack_require__(/*! echarts/lib/visual/dataColor */ "./node_modules/echarts/lib/visual/dataColor.js"), 'liquidFill'
+        __webpack_require__(/*! @ftf/echarts/lib/visual/dataColor */ "./node_modules/@ftf/echarts/lib/visual/dataColor.js"), 'liquidFill'
     )
 );
 
@@ -17256,7 +17269,7 @@ function getWaterPositions(x, stage, waveLength, amplitude) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var completeDimensions = __webpack_require__(/*! echarts/lib/data/helper/completeDimensions */ "./node_modules/echarts/lib/data/helper/completeDimensions.js");
+var completeDimensions = __webpack_require__(/*! @ftf/echarts/lib/data/helper/completeDimensions */ "./node_modules/@ftf/echarts/lib/data/helper/completeDimensions.js");
 var echarts = __webpack_require__(/*! echarts/lib/echarts */ "echarts/lib/echarts");
 
 echarts.extendSeriesModel({
@@ -17348,7 +17361,7 @@ echarts.extendSeriesModel({
 
 var echarts = __webpack_require__(/*! echarts/lib/echarts */ "echarts/lib/echarts");
 var numberUtil = echarts.number;
-var symbolUtil = __webpack_require__(/*! echarts/lib/util/symbol */ "./node_modules/echarts/lib/util/symbol.js");
+var symbolUtil = __webpack_require__(/*! @ftf/echarts/lib/util/symbol */ "./node_modules/@ftf/echarts/lib/util/symbol.js");
 var parsePercent = numberUtil.parsePercent;
 
 var LiquidLayout = __webpack_require__(/*! ./liquidFillLayout */ "./src/liquidFillLayout.js");

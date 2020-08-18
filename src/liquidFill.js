@@ -6,6 +6,6 @@ require('./liquidFillView');
 
 echarts.registerVisual(
     echarts.util.curry(
-        require('echarts/lib/visual/dataColor'), 'liquidFill'
+        require('@ftf/echarts/lib/visual/dataColor'), 'liquidFill'
     )
 );

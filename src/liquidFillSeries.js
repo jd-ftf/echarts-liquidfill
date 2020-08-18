@@ -1,4 +1,4 @@
-var completeDimensions = require('echarts/lib/data/helper/completeDimensions');
+var completeDimensions = require('@ftf/echarts/lib/data/helper/completeDimensions');
 var echarts = require('echarts/lib/echarts');
 
 echarts.extendSeriesModel({
